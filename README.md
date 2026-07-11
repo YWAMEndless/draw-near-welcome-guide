@@ -12,7 +12,6 @@ drawings, and generous unhurried space.
 
 - `index.html` / `styles.css` / `script.js` — the site (no build step, no dependencies)
 - `fonts/` — Cormorant Garamond and Montserrat, subset to Latin and served as woff2
-- `photos/` — photography from the print photo edition, converted to WebP
 - `assets/remembering-room-welcome-guide.pdf` — the printable guide, linked from the footer
 - `source/` — the original print-layout HTML master and full font files
 - `design-philosophy.md` — the Linen Hours design language

@@ -222,16 +222,6 @@ svg.bot path {
   justify-content: center;
 }
 
-/* ---------------- photography ---------------- */
-
-.photo { overflow: hidden; margin: 0; }
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 /* ---------------- hero ---------------- */
 
 .hero {
@@ -239,40 +229,10 @@ svg.bot path {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 0;
-}
-
-.hero-photo {
-  position: relative;
-  width: 100%;
-  height: clamp(19rem, 52svh, 36rem);
-  overflow: hidden;
-}
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 35%;
-  display: block;
-}
-.hero-photo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg,
-    rgba(246,241,231,0) 62%,
-    rgba(246,241,231,.55) 86%,
-    var(--cream) 100%);
-}
-
-.hero-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2.4rem 1.5rem 5.5rem;
+  text-align: center;
+  padding: 5.5rem 1.5rem 6.5rem;
 }
 
 .hero .brand {
@@ -283,8 +243,16 @@ svg.bot path {
   text-indent: 0.58em;
   text-transform: uppercase;
   color: var(--char);
-  margin-bottom: 1.7rem;
 }
+
+.hero .brand-tick {
+  width: 1px;
+  height: 2.1rem;
+  background: var(--clay-soft);
+  margin: 1.3rem auto 2.6rem;
+}
+
+.hero .sprig svg { margin: 0 auto; height: clamp(170px, 26vh, 250px); width: auto; }
 
 .hero .title-the {
   font-family: var(--serif);
@@ -292,6 +260,7 @@ svg.bot path {
   font-weight: 350;
   font-size: clamp(1.35rem, 1.1rem + 1.2vw, 1.8rem);
   color: var(--clay);
+  margin-top: 2.8rem;
 }
 
 .hero h1 {
@@ -380,12 +349,6 @@ svg.bot path {
   margin-top: 2.4rem;
 }
 
-.welcome-plate {
-  margin-top: 3.2rem;
-  aspect-ratio: 5 / 2;
-}
-.welcome-plate img { object-position: center 58%; }
-
 .welcome .margin-stem {
   position: absolute;
   right: 4vw;
@@ -440,12 +403,6 @@ svg.bot path {
   color: #9C947F;
   margin-left: 0.45rem;
   font-size: 1rem;
-}
-
-.bring-plate {
-  margin: 3.4rem auto 0;
-  max-width: 34rem;
-  aspect-ratio: 16 / 7;
 }
 
 .bring .foot { margin-top: 3.4rem; }
@@ -523,11 +480,7 @@ svg.bot path {
 
 /* ---------------- memory book ---------------- */
 
-.book-plate {
-  margin: 0 auto 3.2rem;
-  max-width: 26rem;
-  aspect-ratio: 4 / 3;
-}
+.book .icon { display: flex; justify-content: center; margin-bottom: 2.6rem; }
 
 .book .statement {
   font-family: var(--serif);
@@ -540,16 +493,7 @@ svg.bot path {
 
 /* ---------------- children (clay plate) ---------------- */
 
-.children { background: var(--clay-wash); padding-top: 0; }
-
-.children-band {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  height: clamp(15rem, 42svh, 26rem);
-  margin-bottom: var(--pause);
-}
-.children-band img { object-position: center 40%; }
+.children { background: var(--clay-wash); }
 
 .children .ways {
   font-family: var(--serif);
@@ -593,11 +537,7 @@ svg.bot path {
   margin-top: 1rem;
 }
 
-.table-plate {
-  margin: 3rem auto 0;
-  max-width: 38rem;
-  aspect-ratio: 5 / 2;
-}
+.table-pg .table-art { display: flex; justify-content: center; margin-top: 2.6rem; }
 
 .table-pg .gather {
   font-family: var(--serif);
@@ -610,11 +550,7 @@ svg.bot path {
 
 /* ---------------- thank you ---------------- */
 
-.thanks-plate {
-  margin: 0 auto 3.2rem;
-  max-width: 15rem;
-  aspect-ratio: 5 / 6;
-}
+.thanks .sprig { display: flex; justify-content: center; margin-bottom: 3rem; }
 
 .thanks .grats {
   font-family: var(--serif);

@@ -10,7 +10,6 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#F6F1E7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 90'%3E%3Cg fill='none' stroke='%236E7962' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M30 88 C 28 70, 32 52, 30 34 C 29 24, 31 16, 30 8'/%3E%3Cpath d='M29.3 72 C 26.5 66.5, 21 61.8, 17.2 60.6 C 18.9 64.4, 24.1 70, 29.3 72 Z'/%3E%3Cpath d='M30.6 56 C 36 54, 41.3 48.8, 43 45.3 C 39.2 46.5, 33.3 51.2, 30.6 56 Z'/%3E%3Cpath d='M29.5 40 C 27 35.5, 22.4 31.6, 19.3 30.7 C 20.7 33.7, 25.1 38.2, 29.5 40 Z'/%3E%3Cpath d='M30.4 24 C 33.8 22.4, 37 19, 38 16.5 C 35.3 17.4, 31.9 20.6, 30.4 24 Z'/%3E%3C/g%3E%3C/svg%3E">
-<link rel="preload" href="photos/cover.webp" as="image" type="image/webp">
 <link rel="preload" href="fonts/CG-340.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/CG-It-385.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/MS-330.woff2" as="font" type="font/woff2" crossorigin>
@@ -34,16 +33,36 @@
 
 <!-- ============ COVER ============ -->
 <section class="hero" id="top">
-  <div class="hero-photo rise" style="--d:0ms;">
-    <img src="photos/cover.webp" alt="Two generations of hands passing an old photograph across a wooden table" fetchpriority="high">
+  <div class="blob" aria-hidden="true" style="top:-14rem; right:-16rem; width:38rem; height:35rem; background:var(--sage-wash); opacity:.5; border-radius: 42% 58% 55% 45% / 55% 42% 58% 45%;"></div>
+  <div class="blob" aria-hidden="true" style="bottom:-18rem; left:-18rem; width:42rem; height:38rem; background:var(--clay-wash); opacity:.45; border-radius: 58% 42% 45% 55% / 45% 58% 42% 55%;"></div>
+
+  <div class="brand rise" style="--d:0ms;">Draw&nbsp;Near</div>
+  <div class="brand-tick rise" style="--d:120ms;"></div>
+
+  <div class="sprig rise" aria-hidden="true" style="--d:240ms;">
+    <svg class="bot" width="170" height="300" viewBox="0 0 170 300" style="stroke:#76816A; stroke-width:1;">
+      <path d="M85.0 292.0 C 80.0 258.0, 90.0 226.0, 84.0 192.0 C 79.0 160.0, 90.0 128.0, 84.0 96.0 C 80.0 72.0, 88.0 48.0, 85.0 18.0"/>
+      <path d="M83.9 281.9 C 75.2 269.7, 57.7 259.4, 47.5 257.2 C 53.3 265.9, 69.3 278.3, 83.9 281.9 Z"/>
+      <path d="M83.6 263.8 C 98.7 259.5, 115.0 245.8, 120.7 236.6 C 110.2 239.3, 92.3 250.8, 83.6 263.8 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+      <path d="M84.7 244.0 C 77.6 230.4, 61.3 217.6, 51.3 213.9 C 56.0 223.5, 70.5 238.3, 84.7 244.0 Z"/>
+      <path d="M85.9 224.2 C 100.0 220.2, 115.2 207.5, 120.6 198.8 C 110.7 201.3, 94.0 211.9, 85.9 224.2 Z"/>
+      <path d="M85.5 204.2 C 77.3 192.8, 60.9 183.4, 51.4 181.5 C 56.8 189.5, 71.9 201.0, 85.5 204.2 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+      <path d="M82.8 180.5 C 95.6 175.6, 108.7 162.7, 113.1 154.3 C 104.1 157.4, 89.4 168.5, 82.8 180.5 Z"/>
+      <path d="M83.0 161.3 C 76.9 149.9, 63.0 139.2, 54.5 136.2 C 58.5 144.2, 70.9 156.6, 83.0 161.3 Z"/>
+      <path d="M84.7 140.2 C 96.7 137.4, 110.0 127.5, 114.8 120.4 C 106.4 122.1, 92.0 130.2, 84.7 140.2 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+      <path d="M85.8 119.0 C 80.1 109.3, 67.6 100.7, 60.0 98.5 C 63.8 105.4, 75.1 115.6, 85.8 119.0 Z"/>
+      <path d="M84.9 101.8 C 94.3 97.5, 103.3 87.1, 106.0 80.4 C 99.4 83.2, 89.0 92.3, 84.9 101.8 Z"/>
+      <path d="M82.9 83.0 C 78.0 75.1, 67.6 68.3, 61.3 66.8 C 64.5 72.4, 73.9 80.5, 82.9 83.0 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+      <path d="M83.6 65.3 C 91.7 63.7, 100.5 57.0, 103.6 52.1 C 98.0 53.1, 88.3 58.5, 83.6 65.3 Z"/>
+      <path d="M85.1 46.8 C 82.2 40.5, 74.9 34.8, 70.3 33.4 C 72.2 37.8, 78.6 44.5, 85.1 46.8 Z"/>
+      <path d="M85.7 30.3 C 91.1 28.9, 96.5 23.8, 98.2 20.2 C 94.3 21.1, 88.2 25.3, 85.7 30.3 Z"/>
+      <path d="M85.0 18.0 C 86.3 12.6, 84.9 5.3, 83.0 2.0 C 82.0 5.7, 82.4 13.1, 85.0 18.0 Z"/>
+    </svg>
   </div>
 
-  <div class="hero-body">
-    <div class="brand rise" style="--d:260ms;">Draw&nbsp;Near</div>
-    <div class="title-the rise" style="--d:400ms;">the</div>
-    <h1 class="rise" style="--d:520ms;">Remembering Room</h1>
-    <p class="tagline rise" style="--d:700ms;">A guided gathering to create, remember, and honor a life together.</p>
-  </div>
+  <div class="title-the rise" style="--d:420ms;">the</div>
+  <h1 class="rise" style="--d:540ms;">Remembering Room</h1>
+  <p class="tagline rise" style="--d:720ms;">A guided gathering to create, remember, and honor a life together.</p>
 
   <div class="scroll-cue rise" aria-hidden="true" style="--d:1100ms;"></div>
 </section>
@@ -79,10 +98,6 @@
     </p>
 
     <div class="closing" data-reveal>Simply come as you are.</div>
-
-    <figure class="photo welcome-plate" data-reveal>
-      <img src="photos/letters.webp" alt="Handwritten letters tied with ribbon on a linen cloth" loading="lazy">
-    </figure>
   </div>
 
   <div class="margin-stem" aria-hidden="true" data-reveal>
@@ -154,10 +169,6 @@
       <div class="item"><span class="sq"></span>Anything that tells a story</div>
     </div>
 
-    <figure class="photo bring-plate" data-reveal>
-      <img src="photos/keepsakes-flatlay.webp" alt="Keepsakes laid out on linen — photographs, letters, pressed flowers, and small mementos" loading="lazy">
-    </figure>
-
     <div class="foot" data-reveal>
       <div class="line1">Don’t worry if you don’t have any of these.</div>
       <div class="line2">Your memories are enough.</div>
@@ -219,9 +230,12 @@
 <!-- ============ THE MEMORY BOOK ============ -->
 <section class="book">
   <div class="inner">
-    <figure class="photo book-plate" data-reveal>
-      <img src="photos/album.webp" alt="Hands turning the pages of a handmade memory album" loading="lazy">
-    </figure>
+    <div class="icon" aria-hidden="true" data-reveal>
+      <svg class="bot" width="150" height="76" viewBox="0 0 150 76" style="stroke:#6E695F; stroke-width:1;">
+        <path d="M75 16 C 61 7, 38 4, 21 10 C 20.3 27, 20.7 44, 20 60 C 38 54, 61 57, 75 66 C 89 57, 112 54, 130 60 C 129.3 44, 129.7 27, 129 10 C 112 4, 89 7, 75 16"/>
+        <path d="M75 16 C 74.5 33, 75.4 50, 75 66"/>
+      </svg>
+    </div>
 
     <div data-reveal>
       <div class="label">One book, many voices</div>
@@ -239,12 +253,8 @@
 </section>
 
 <!-- ============ FOR CHILDREN ============ -->
-<section class="children">
-  <div class="photo children-band" data-reveal>
-    <img src="photos/child.webp" alt="A child drawing with crayons at a wooden table" loading="lazy">
-  </div>
-
-  <div class="blob" aria-hidden="true" style="bottom:-16rem; right:-17rem; width:36rem; height:33rem; background:#E9D9C8; opacity:.5; border-radius: 48% 52% 55% 45% / 52% 48% 52% 48%;"></div>
+<section class="children plate">
+  <div class="blob" aria-hidden="true" style="top:-16rem; right:-17rem; width:36rem; height:33rem; background:#E9D9C8; opacity:.5; border-radius: 48% 52% 55% 45% / 52% 48% 52% 48%;"></div>
 
   <div class="inner">
     <div data-reveal>
@@ -297,9 +307,13 @@
       <div>Generations remember.</div>
     </div>
 
-    <figure class="photo table-plate" data-reveal>
-      <img src="photos/table.webp" alt="A family gathered around a wooden table with coffee, flowers, and old photographs" loading="lazy">
-    </figure>
+    <div class="table-art" aria-hidden="true" data-reveal>
+      <svg class="bot" width="230" height="58" viewBox="0 0 230 58" style="stroke:#B08265; stroke-width:1.1;">
+        <path d="M14 13 C 70 9.5, 160 9.5, 216 12.5"/>
+        <path d="M42 11.2 C 41 24, 42.2 37, 40.5 49"/>
+        <path d="M188 10.9 C 189 23, 187.9 36, 189.4 48"/>
+      </svg>
+    </div>
 
     <div class="gather" data-reveal>
       Today we gather around one table —<br>
@@ -314,9 +328,21 @@
   <div class="blob" aria-hidden="true" style="bottom:-17rem; left:-18rem; width:38rem; height:35rem; background:var(--sage-wash); opacity:.4; border-radius: 55% 45% 48% 52% / 45% 55% 48% 52%;"></div>
 
   <div class="inner">
-    <figure class="photo thanks-plate" data-reveal>
-      <img src="photos/keepsake.webp" alt="Hands holding a small keepsake wrapped in soft paper" loading="lazy">
-    </figure>
+    <div class="sprig" aria-hidden="true" data-reveal>
+      <svg class="bot" width="112" height="164" viewBox="0 0 130 190" style="stroke:#76816A; stroke-width:1;">
+        <path d="M65.0 186.0 C 61.0 160.0, 69.0 138.0, 64.0 112.0 C 60.0 88.0, 68.0 64.0, 65.0 14.0"/>
+        <path d="M64.0 176.8 C 57.8 167.8, 45.2 160.2, 37.7 158.6 C 41.8 165.0, 53.4 174.2, 64.0 176.8 Z"/>
+        <path d="M64.2 159.1 C 75.1 156.4, 87.1 146.9, 91.3 140.3 C 83.6 142.0, 70.6 149.8, 64.2 159.1 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+        <path d="M65.4 141.8 C 60.4 132.4, 49.1 123.7, 42.1 121.3 C 45.3 128.0, 55.4 138.1, 65.4 141.8 Z"/>
+        <path d="M65.5 124.2 C 74.8 120.8, 84.3 111.3, 87.3 105.0 C 80.7 107.2, 70.1 115.4, 65.5 124.2 Z"/>
+        <path d="M63.1 104.8 C 57.8 97.2, 47.0 91.0, 40.7 89.8 C 44.2 95.2, 54.1 102.7, 63.1 104.8 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+        <path d="M63.1 88.1 C 71.4 86.0, 80.4 78.8, 83.5 73.7 C 77.7 75.0, 67.8 81.0, 63.1 88.1 Z"/>
+        <path d="M64.4 69.0 C 61.0 62.2, 53.1 56.0, 48.1 54.3 C 50.3 59.1, 57.3 66.4, 64.4 69.0 Z"/>
+        <path d="M65.5 48.2 C 71.9 46.6, 78.6 40.9, 80.8 36.9 C 76.4 37.9, 68.9 42.6, 65.5 48.2 Z" style="fill:#8C977E; fill-opacity:.06;"/>
+        <path d="M65.6 28.2 C 63.0 23.7, 57.2 20.0, 53.6 19.3 C 55.3 22.5, 60.5 27.1, 65.6 28.2 Z"/>
+        <path d="M65.0 14.0 C 66.3 9.6, 65.2 3.7, 63.5 1.0 C 62.5 4.0, 62.7 10.0, 65.0 14.0 Z"/>
+      </svg>
+    </div>
 
     <div data-reveal>
       <div class="label">In closing</div>
