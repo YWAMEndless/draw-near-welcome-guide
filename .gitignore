@@ -1,0 +1,6 @@
+.DS_Store
+.vercel
+node_modules
+
+# original PDF export lives in assets/ with a URL-safe name
+/Draw Near*.pdf

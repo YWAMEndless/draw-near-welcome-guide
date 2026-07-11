@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draw Near — The Remembering Room</title>
+<meta name="description" content="A guided gathering to create, remember, and honor a life together. Through storytelling, photographs, and creativity, each person contributes one page of a shared memory book.">
+<meta property="og:title" content="Draw Near — The Remembering Room">
+<meta property="og:description" content="A guided gathering to create, remember, and honor a life together.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6F1E7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 90'%3E%3Cg fill='none' stroke='%236E7962' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M30 88 C 28 70, 32 52, 30 34 C 29 24, 31 16, 30 8'/%3E%3Cpath d='M29.3 72 C 26.5 66.5, 21 61.8, 17.2 60.6 C 18.9 64.4, 24.1 70, 29.3 72 Z'/%3E%3Cpath d='M30.6 56 C 36 54, 41.3 48.8, 43 45.3 C 39.2 46.5, 33.3 51.2, 30.6 56 Z'/%3E%3Cpath d='M29.5 40 C 27 35.5, 22.4 31.6, 19.3 30.7 C 20.7 33.7, 25.1 38.2, 29.5 40 Z'/%3E%3Cpath d='M30.4 24 C 33.8 22.4, 37 19, 38 16.5 C 35.3 17.4, 31.9 20.6, 30.4 24 Z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" href="photos/cover.webp" as="image" type="image/webp">
+<link rel="preload" href="fonts/CG-340.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/CG-It-385.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/MS-330.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>
+  // ?static renders everything without motion — used for print-style review
+  if (/[?&]static/.test(location.search)) {
+    document.documentElement.classList.add('static');
+  } else {
+    document.documentElement.classList.add('js');
+  }
+</script>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a href="#top">Draw&nbsp;Near</a>
+</header>
+
+<!-- ============ COVER ============ -->
+<section class="hero" id="top">
+  <div class="hero-photo rise" style="--d:0ms;">
+    <img src="photos/cover.webp" alt="Two generations of hands passing an old photograph across a wooden table" fetchpriority="high">
+  </div>
+
+  <div class="hero-body">
+    <div class="brand rise" style="--d:260ms;">Draw&nbsp;Near</div>
+    <div class="title-the rise" style="--d:400ms;">the</div>
+    <h1 class="rise" style="--d:520ms;">Remembering Room</h1>
+    <p class="tagline rise" style="--d:700ms;">A guided gathering to create, remember, and honor a life together.</p>
+  </div>
+
+  <div class="scroll-cue rise" aria-hidden="true" style="--d:1100ms;"></div>
+</section>
+
+<!-- ============ WELCOME ============ -->
+<section class="welcome">
+  <div class="blob" aria-hidden="true" style="top:-16rem; right:-18rem; width:36rem; height:33rem; background:var(--sage-wash); opacity:.42; border-radius: 45% 55% 52% 48% / 55% 45% 55% 45%;"></div>
+
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">Welcome</div>
+      <h2 class="display">There are many ways to remember someone we&nbsp;love.</h2>
+      <hr class="rule rule--left">
+    </div>
+
+    <div class="mem-lines" data-reveal>
+      Some memories make us laugh.<br>
+      Some bring tears.<br>
+      Some are stories we’ve told a hundred times.<br>
+      <em>Others have never been spoken aloud.</em>
+    </div>
+
+    <p class="body-text" data-reveal>
+      The Remembering Room is an opportunity to slow down together.
+      Through storytelling, photographs, handwritten notes, and creativity,
+      each person contributes one page that becomes part of a shared
+      memory book for the family.
+    </p>
+
+    <p class="body-text" data-reveal style="margin-top:1.2rem;">
+      There is no artistic ability required.<br>
+      There is no right way to remember.
+    </p>
+
+    <div class="closing" data-reveal>Simply come as you are.</div>
+
+    <figure class="photo welcome-plate" data-reveal>
+      <img src="photos/letters.webp" alt="Handwritten letters tied with ribbon on a linen cloth" loading="lazy">
+    </figure>
+  </div>
+
+  <div class="margin-stem" aria-hidden="true" data-reveal>
+    <svg class="bot" width="44" height="210" viewBox="0 0 44 210" style="stroke:#8C977E; stroke-width:0.9;">
+      <path d="M22.0 206.0 C 20.0 168.0, 26.0 134.0, 22.0 100.0 C 20.0 76.0, 25.0 50.0, 22.0 10.0"/>
+      <path d="M21.6 183.6 C 19.2 178.4, 13.3 173.2, 9.5 171.7 C 11.1 175.4, 16.3 181.2, 21.6 183.6 Z"/>
+      <path d="M22.5 157.8 C 27.9 155.7, 33.4 150.2, 35.2 146.6 C 31.4 147.9, 25.2 152.7, 22.5 157.8 Z"/>
+      <path d="M23.4 132.8 C 21.1 127.8, 15.5 122.9, 12.0 121.5 C 13.5 125.0, 18.4 130.5, 23.4 132.8 Z"/>
+      <path d="M22.9 110.2 C 27.5 107.9, 31.8 102.5, 33.0 99.1 C 29.8 100.6, 24.8 105.4, 22.9 110.2 Z"/>
+      <path d="M21.5 89.8 C 19.4 85.5, 14.4 81.4, 11.3 80.2 C 12.7 83.2, 17.1 87.9, 21.5 89.8 Z"/>
+      <path d="M21.9 72.7 C 26.0 71.2, 30.2 66.9, 31.6 64.1 C 28.6 65.1, 23.9 68.8, 21.9 72.7 Z"/>
+      <path d="M22.7 53.9 C 21.2 50.4, 17.5 47.0, 15.0 46.0 C 15.9 48.4, 19.2 52.3, 22.7 53.9 Z"/>
+      <path d="M23.0 34.5 C 25.9 33.3, 28.6 30.2, 29.4 28.2 C 27.4 28.9, 24.2 31.6, 23.0 34.5 Z"/>
+      <path d="M22.0 10.0 C 22.7 7.0, 22.0 2.9, 21.0 1.0 C 20.5 3.1, 20.7 7.2, 22.0 10.0 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ WHAT TO EXPECT ============ -->
+<section class="expect">
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">Our time together</div>
+      <h2 class="display">What to Expect</h2>
+      <hr class="rule">
+    </div>
+
+    <p class="intro" data-reveal style="margin-top:2.6rem;">Our gathering will last approximately three hours.<br>During our time together we will —</p>
+
+    <div class="acts serif-lines" data-reveal data-stagger>
+      <div>Welcome everyone</div>
+      <div>Share the purpose of the gathering</div>
+      <div>Create individual memory pages</div>
+      <div>Tell stories as we create</div>
+      <div>Assemble the memory book together</div>
+      <div>Close with a time of gratitude and reflection</div>
+    </div>
+
+    <p class="foot" data-reveal>
+      All art materials are provided.<br>
+      <em>No artistic experience is necessary.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ============ WHAT TO BRING ============ -->
+<section class="bring">
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">Keepsakes &amp; stories</div>
+      <h2 class="display">What to Bring</h2>
+      <hr class="rule">
+    </div>
+
+    <p class="intro" data-reveal style="margin-top:2.6rem;">If possible, please bring one or two of the following —</p>
+
+    <div class="grid" data-reveal data-stagger>
+      <div class="item"><span class="sq"></span>A favorite photograph</div>
+      <div class="item"><span class="sq"></span>A funny story</div>
+      <div class="item"><span class="sq"></span>A handwritten letter</div>
+      <div class="item"><span class="sq"></span>A favorite saying</div>
+      <div class="item"><span class="sq"></span>A recipe</div>
+      <div class="item"><span class="sq"></span>A Bible verse <span class="note">(optional)</span></div>
+      <div class="item"><span class="sq"></span>A favorite quote</div>
+      <div class="item"><span class="sq"></span>Children’s artwork</div>
+      <div class="item"><span class="sq"></span>A meaningful object</div>
+      <div class="item"><span class="sq"></span>Ticket stubs and maps</div>
+      <div class="item"><span class="sq"></span>Small memorabilia</div>
+      <div class="item"><span class="sq"></span>Anything that tells a story</div>
+    </div>
+
+    <figure class="photo bring-plate" data-reveal>
+      <img src="photos/keepsakes-flatlay.webp" alt="Keepsakes laid out on linen — photographs, letters, pressed flowers, and small mementos" loading="lazy">
+    </figure>
+
+    <div class="foot" data-reveal>
+      <div class="line1">Don’t worry if you don’t have any of these.</div>
+      <div class="line2">Your memories are enough.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFLECTION QUESTIONS ============ -->
+<section class="reflect">
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">Before you begin</div>
+      <h2 class="display">Reflection Questions</h2>
+      <hr class="rule">
+    </div>
+
+    <p class="intro" data-reveal style="margin-top:2.6rem;">Choose one or two to inspire your page —</p>
+
+    <ol data-reveal data-stagger>
+      <li>What is your favorite memory?<span class="qsep"></span></li>
+      <li>What made them laugh?<span class="qsep"></span></li>
+      <li>What did they teach you?<span class="qsep"></span></li>
+      <li>What will you always remember?<span class="qsep"></span></li>
+      <li>What did they love?<span class="qsep"></span></li>
+      <li>What words remind you of them?<span class="qsep"></span></li>
+      <li>What is something you never want your family to forget?<span class="qsep"></span></li>
+      <li>If they could speak to future generations, what might they say?<span class="qsep"></span></li>
+      <li><em>What part of them lives on in you?</em><span class="qsep"></span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ GENTLE REMINDERS ============ -->
+<section class="remind plate">
+  <div class="blob" aria-hidden="true" style="top:-18rem; left:-18rem; width:40rem; height:37rem; background:#DDE3CE; opacity:.55; border-radius: 52% 48% 45% 55% / 48% 55% 45% 52%;"></div>
+  <div class="blob" aria-hidden="true" style="bottom:-19rem; right:-19rem; width:41rem; height:37rem; background:#DDE3CE; opacity:.45; border-radius: 45% 55% 58% 42% / 55% 45% 55% 45%;"></div>
+
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">A few gentle reminders</div>
+      <h2 class="display">Everyone grieves differently.</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="lead" data-reveal>Today…</div>
+
+    <div class="may" data-reveal data-stagger>
+      <div>You may laugh.</div>
+      <div>You may cry.</div>
+      <div>You may sit quietly.</div>
+      <div>You may tell stories.</div>
+      <div><em>You may simply create.</em></div>
+    </div>
+
+    <div class="foot" data-reveal>Every response is welcome</div>
+  </div>
+</section>
+
+<!-- ============ THE MEMORY BOOK ============ -->
+<section class="book">
+  <div class="inner">
+    <figure class="photo book-plate" data-reveal>
+      <img src="photos/album.webp" alt="Hands turning the pages of a handmade memory album" loading="lazy">
+    </figure>
+
+    <div data-reveal>
+      <div class="label">One book, many voices</div>
+      <h2 class="display">The Memory Book</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="statement" data-reveal>
+      Each person will create one page.<br>
+      Together, those pages become <em>one story</em>.<br>
+      <span class="quiet">Not because one page tells an entire life —<br>
+      but because a life is remembered<br>through <em>many voices</em>.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR CHILDREN ============ -->
+<section class="children">
+  <div class="photo children-band" data-reveal>
+    <img src="photos/child.webp" alt="A child drawing with crayons at a wooden table" loading="lazy">
+  </div>
+
+  <div class="blob" aria-hidden="true" style="bottom:-16rem; right:-17rem; width:36rem; height:33rem; background:#E9D9C8; opacity:.5; border-radius: 48% 52% 55% 45% / 52% 48% 52% 48%;"></div>
+
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">Children are welcome</div>
+      <h2 class="display">Children remember<br>differently than adults.</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="ways" data-reveal data-stagger>
+      <div>Drawing…</div>
+      <div>Painting…</div>
+      <div>Writing…</div>
+      <div>Collaging…</div>
+    </div>
+
+    <div class="flower" aria-hidden="true" data-reveal>
+      <svg class="bot" width="60" height="90" viewBox="0 0 60 90" style="stroke:#B08265; stroke-width:0.9;">
+        <path d="M30 88 C 28 70, 32 52, 30 34 C 29 24, 31 16, 30 8"/>
+        <path d="M29.3 72 C 26.5 66.5, 21 61.8, 17.2 60.6 C 18.9 64.4, 24.1 70, 29.3 72 Z"/>
+        <path d="M30.6 56 C 36 54, 41.3 48.8, 43 45.3 C 39.2 46.5, 33.3 51.2, 30.6 56 Z"/>
+        <path d="M29.5 40 C 27 35.5, 22.4 31.6, 19.3 30.7 C 20.7 33.7, 25.1 38.2, 29.5 40 Z"/>
+        <path d="M30.4 24 C 33.8 22.4, 37 19, 38 16.5 C 35.3 17.4, 31.9 20.6, 30.4 24 Z"/>
+        <path d="M30 8 C 30.9 4.8, 30.1 1.6, 29.1 0.4 C 28.4 2.5, 28.7 5.6, 30 8 Z"/>
+      </svg>
+    </div>
+
+    <div class="foot" data-reveal>
+      All are wonderful ways of remembering.<br>
+      There is no “correct” page.
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE TABLE ============ -->
+<section class="table-pg">
+  <div class="inner">
+    <div data-reveal>
+      <div class="label">Gathered together</div>
+      <h2 class="display">The Table</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="around" data-reveal>Around a table…</div>
+
+    <div class="acts" data-reveal data-stagger>
+      <div>Stories are told.</div>
+      <div>Photographs are passed.</div>
+      <div>Hands create.</div>
+      <div>Children listen.</div>
+      <div>Generations remember.</div>
+    </div>
+
+    <figure class="photo table-plate" data-reveal>
+      <img src="photos/table.webp" alt="A family gathered around a wooden table with coffee, flowers, and old photographs" loading="lazy">
+    </figure>
+
+    <div class="gather" data-reveal>
+      Today we gather around one table —<br>
+      to honor <em>one life</em> —<br>
+      and to leave a gift for generations to come.
+    </div>
+  </div>
+</section>
+
+<!-- ============ THANK YOU ============ -->
+<section class="thanks">
+  <div class="blob" aria-hidden="true" style="bottom:-17rem; left:-18rem; width:38rem; height:35rem; background:var(--sage-wash); opacity:.4; border-radius: 55% 45% 48% 52% / 45% 55% 48% 52%;"></div>
+
+  <div class="inner">
+    <figure class="photo thanks-plate" data-reveal>
+      <img src="photos/keepsake.webp" alt="Hands holding a small keepsake wrapped in soft paper" loading="lazy">
+    </figure>
+
+    <div data-reveal>
+      <div class="label">In closing</div>
+      <h2 class="display">Thank You</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="grats" data-reveal>
+      Thank you for sharing your memories.<br>
+      Thank you for creating together.<br>
+      Thank you for helping preserve a life that mattered.
+    </div>
+
+    <div class="bless" data-reveal>
+      May this book become something your family<br>
+      returns to for years to come.
+    </div>
+
+    <div class="signoff" data-reveal>
+      <div class="with">With gratitude,</div>
+      <div class="wordmark">Draw Near</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR THE HOST ============ -->
+<section class="host">
+  <div class="inner">
+    <div data-reveal>
+      <div class="toplabel">For the host</div>
+      <div class="label">Before we arrive</div>
+      <h2 class="display">Preparing Your Home</h2>
+      <hr class="rule">
+    </div>
+
+    <p class="intro" data-reveal style="margin-top:2.6rem;">A little preparation makes the room feel gracious.<br>Here is all you need —</p>
+
+    <ul data-reveal data-stagger>
+      <li><span class="sq"></span>One large table, if possible</li>
+      <li><span class="sq"></span>Good lighting</li>
+      <li><span class="sq"></span>Light snacks</li>
+      <li><span class="sq"></span>Coffee or tea</li>
+      <li><span class="sq"></span>Soft instrumental music</li>
+      <li><span class="sq"></span>A nearby place for photos and keepsakes</li>
+      <li><span class="sq"></span>Tissues</li>
+      <li><span class="sq"></span>Enough chairs for everyone</li>
+    </ul>
+
+    <div class="foot" data-reveal>We will take care of the rest.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wordmark">Draw&nbsp;Near</div>
+  <div class="foot-tag">The Remembering Room</div>
+  <a class="pdf" href="assets/remembering-room-welcome-guide.pdf" download>Download the printable guide</a>
+  <div class="fine">© 2026 Draw Near · A guided gathering to create, remember, and honor a life together.</div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
