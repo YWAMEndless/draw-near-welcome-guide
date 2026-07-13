@@ -23,9 +23,30 @@ document.querySelectorAll('[data-reveal]').forEach(function (el) {
   observer.observe(el);
 });
 
-// wordmark appears once the cover has been left behind
+// the header settles onto the page as soon as the cover is left
 function onScroll() {
-  document.body.classList.toggle('scrolled', window.scrollY > window.innerHeight * 0.6);
+  document.body.classList.toggle('scrolled', window.scrollY > 24);
 }
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
+
+// menu (small screens): one quiet panel beneath the header
+var menuToggle = document.querySelector('.menu-toggle');
+
+function closeMenu() {
+  document.body.classList.remove('menu-open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
+
+menuToggle.addEventListener('click', function () {
+  var open = document.body.classList.toggle('menu-open');
+  menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+
+document.querySelectorAll('.site-nav a').forEach(function (link) {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeMenu();
+});

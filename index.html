@@ -28,7 +28,15 @@
 <div class="grain" aria-hidden="true"></div>
 
 <header class="site-head">
-  <a href="#top">Draw&nbsp;Near</a>
+  <a class="brand-link" href="#top">Draw&nbsp;Near</a>
+  <nav class="site-nav" id="site-nav" aria-label="Guide sections">
+    <a href="#welcome">Welcome</a>
+    <a href="#bring">What to Bring</a>
+    <a href="#children">For Children</a>
+    <a href="#table">The Table</a>
+    <a href="#host">For the Host</a>
+  </nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 </header>
 
 <!-- ============ COVER ============ -->
@@ -68,7 +76,7 @@
 </section>
 
 <!-- ============ WELCOME ============ -->
-<section class="welcome">
+<section class="welcome" id="welcome">
   <div class="blob" aria-hidden="true" style="top:-16rem; right:-18rem; width:36rem; height:33rem; background:var(--sage-wash); opacity:.42; border-radius: 45% 55% 52% 48% / 55% 45% 55% 45%;"></div>
 
   <div class="inner">
@@ -78,21 +86,19 @@
       <hr class="rule rule--left">
     </div>
 
-    <div class="mem-lines" data-reveal>
-      Some memories make us laugh.<br>
-      Some bring tears.<br>
-      Some are stories we’ve told a hundred times.<br>
-      <em>Others have never been spoken aloud.</em>
-    </div>
-
-    <p class="body-text" data-reveal>
+    <p class="body-text" data-reveal style="margin-top:2.6rem;">
       The Remembering Room is an opportunity to slow down together.
       Through storytelling, photographs, handwritten notes, and creativity,
       each person contributes one page that becomes part of a shared
       memory book for the family.
     </p>
 
-    <p class="body-text" data-reveal style="margin-top:1.2rem;">
+    <p class="facilitate" data-reveal>
+      Two mental health professionals will facilitate a time
+      to gather, create, and share.
+    </p>
+
+    <p class="body-text" data-reveal style="margin-top:1.6rem;">
       There is no artistic ability required.<br>
       There is no right way to remember.
     </p>
@@ -116,58 +122,39 @@
   </div>
 </section>
 
-<!-- ============ WHAT TO EXPECT ============ -->
-<section class="expect">
-  <div class="inner">
-    <div data-reveal>
-      <div class="label">Our time together</div>
-      <h2 class="display">What to Expect</h2>
-      <hr class="rule">
-    </div>
-
-    <p class="intro" data-reveal style="margin-top:2.6rem;">Our gathering will last approximately three hours.<br>During our time together we will —</p>
-
-    <div class="acts serif-lines" data-reveal data-stagger>
-      <div>Welcome everyone</div>
-      <div>Share the purpose of the gathering</div>
-      <div>Create individual memory pages</div>
-      <div>Tell stories as we create</div>
-      <div>Assemble the memory book together</div>
-      <div>Close with a time of gratitude and reflection</div>
-    </div>
-
-    <p class="foot" data-reveal>
-      All art materials are provided.<br>
-      <em>No artistic experience is necessary.</em>
-    </p>
-  </div>
-</section>
-
 <!-- ============ WHAT TO BRING ============ -->
-<section class="bring">
+<section class="bring" id="bring">
   <div class="inner">
     <div data-reveal>
-      <div class="label">Keepsakes &amp; stories</div>
+      <div class="label">Photographs &amp; prompts</div>
       <h2 class="display">What to Bring</h2>
       <hr class="rule">
     </div>
 
-    <p class="intro" data-reveal style="margin-top:2.6rem;">If possible, please bring one or two of the following —</p>
+    <p class="intro" data-reveal style="margin-top:2.6rem;">If possible, please bring a few favorite photographs.</p>
 
-    <div class="grid" data-reveal data-stagger>
-      <div class="item"><span class="sq"></span>A favorite photograph</div>
-      <div class="item"><span class="sq"></span>A funny story</div>
-      <div class="item"><span class="sq"></span>A handwritten letter</div>
-      <div class="item"><span class="sq"></span>A favorite saying</div>
-      <div class="item"><span class="sq"></span>A recipe</div>
-      <div class="item"><span class="sq"></span>A Bible verse <span class="note">(optional)</span></div>
-      <div class="item"><span class="sq"></span>A favorite quote</div>
-      <div class="item"><span class="sq"></span>Children’s artwork</div>
-      <div class="item"><span class="sq"></span>A meaningful object</div>
-      <div class="item"><span class="sq"></span>Ticket stubs and maps</div>
-      <div class="item"><span class="sq"></span>Small memorabilia</div>
-      <div class="item"><span class="sq"></span>Anything that tells a story</div>
-    </div>
+    <p class="how" data-reveal>
+      Before arriving, spend a little time with the prompts below —
+      journal or write about the ones that resonate, so you have
+      something to work with. There is no need to answer them all;
+      one or two is plenty, about one per page.
+    </p>
+
+    <ol class="prompts" data-reveal data-stagger>
+      <li>Write down words or phrases they used all the time — we will turn these into quotes.</li>
+      <li>What were some of their fondest quirks, habits, or daily routines?</li>
+      <li>How would you describe their laugh or sense of humor?</li>
+      <li>What is your earliest memory of them?</li>
+      <li>Can you share a specific story that captures something essential about their personality?</li>
+      <li>Did they have favorite stories they loved to tell — from childhood, their teen years, early adulthood, or later in life?</li>
+      <li>What were the biggest hardships or challenges they faced, and how did they approach or overcome them?</li>
+      <li>How did they show love or care — for others, and for you personally?</li>
+      <li>What was something they taught you, either on purpose or without realizing it?</li>
+      <li>What causes, hobbies, or passions were they most proud of?</li>
+      <li>What do you miss the most about them?</li>
+      <li>What is the image of them that most often comes to mind?</li>
+      <li>When people think of them, how would they want to be remembered?</li>
+    </ol>
 
     <div class="foot" data-reveal>
       <div class="line1">Don’t worry if you don’t have any of these.</div>
@@ -176,84 +163,8 @@
   </div>
 </section>
 
-<!-- ============ REFLECTION QUESTIONS ============ -->
-<section class="reflect">
-  <div class="inner">
-    <div data-reveal>
-      <div class="label">Before you begin</div>
-      <h2 class="display">Reflection Questions</h2>
-      <hr class="rule">
-    </div>
-
-    <p class="intro" data-reveal style="margin-top:2.6rem;">Choose one or two to inspire your page —</p>
-
-    <ol data-reveal data-stagger>
-      <li>What is your favorite memory?<span class="qsep"></span></li>
-      <li>What made them laugh?<span class="qsep"></span></li>
-      <li>What did they teach you?<span class="qsep"></span></li>
-      <li>What will you always remember?<span class="qsep"></span></li>
-      <li>What did they love?<span class="qsep"></span></li>
-      <li>What words remind you of them?<span class="qsep"></span></li>
-      <li>What is something you never want your family to forget?<span class="qsep"></span></li>
-      <li>If they could speak to future generations, what might they say?<span class="qsep"></span></li>
-      <li><em>What part of them lives on in you?</em><span class="qsep"></span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============ GENTLE REMINDERS ============ -->
-<section class="remind plate">
-  <div class="blob" aria-hidden="true" style="top:-18rem; left:-18rem; width:40rem; height:37rem; background:#DDE3CE; opacity:.55; border-radius: 52% 48% 45% 55% / 48% 55% 45% 52%;"></div>
-  <div class="blob" aria-hidden="true" style="bottom:-19rem; right:-19rem; width:41rem; height:37rem; background:#DDE3CE; opacity:.45; border-radius: 45% 55% 58% 42% / 55% 45% 55% 45%;"></div>
-
-  <div class="inner">
-    <div data-reveal>
-      <div class="label">A few gentle reminders</div>
-      <h2 class="display">Everyone grieves differently.</h2>
-      <hr class="rule">
-    </div>
-
-    <div class="lead" data-reveal>Today…</div>
-
-    <div class="may" data-reveal data-stagger>
-      <div>You may laugh.</div>
-      <div>You may cry.</div>
-      <div>You may sit quietly.</div>
-      <div>You may tell stories.</div>
-      <div><em>You may simply create.</em></div>
-    </div>
-
-    <div class="foot" data-reveal>Every response is welcome</div>
-  </div>
-</section>
-
-<!-- ============ THE MEMORY BOOK ============ -->
-<section class="book">
-  <div class="inner">
-    <div class="icon" aria-hidden="true" data-reveal>
-      <svg class="bot" width="150" height="76" viewBox="0 0 150 76" style="stroke:#6E695F; stroke-width:1;">
-        <path d="M75 16 C 61 7, 38 4, 21 10 C 20.3 27, 20.7 44, 20 60 C 38 54, 61 57, 75 66 C 89 57, 112 54, 130 60 C 129.3 44, 129.7 27, 129 10 C 112 4, 89 7, 75 16"/>
-        <path d="M75 16 C 74.5 33, 75.4 50, 75 66"/>
-      </svg>
-    </div>
-
-    <div data-reveal>
-      <div class="label">One book, many voices</div>
-      <h2 class="display">The Memory Book</h2>
-      <hr class="rule">
-    </div>
-
-    <div class="statement" data-reveal>
-      Each person will create one page.<br>
-      Together, those pages become <em>one story</em>.<br>
-      <span class="quiet">Not because one page tells an entire life —<br>
-      but because a life is remembered<br>through <em>many voices</em>.</span>
-    </div>
-  </div>
-</section>
-
 <!-- ============ FOR CHILDREN ============ -->
-<section class="children plate">
+<section class="children plate" id="children">
   <div class="blob" aria-hidden="true" style="top:-16rem; right:-17rem; width:36rem; height:33rem; background:#E9D9C8; opacity:.5; border-radius: 48% 52% 55% 45% / 52% 48% 52% 48%;"></div>
 
   <div class="inner">
@@ -269,6 +180,12 @@
       <div>Writing…</div>
       <div>Collaging…</div>
     </div>
+
+    <p class="provide" data-reveal>
+      We will provide materials and prompts for children to explore
+      during our time together — or feel free to have your children
+      think or write about the prompts above beforehand.
+    </p>
 
     <div class="flower" aria-hidden="true" data-reveal>
       <svg class="bot" width="60" height="90" viewBox="0 0 60 90" style="stroke:#B08265; stroke-width:0.9;">
@@ -289,7 +206,7 @@
 </section>
 
 <!-- ============ THE TABLE ============ -->
-<section class="table-pg">
+<section class="table-pg" id="table">
   <div class="inner">
     <div data-reveal>
       <div class="label">Gathered together</div>
@@ -323,53 +240,8 @@
   </div>
 </section>
 
-<!-- ============ THANK YOU ============ -->
-<section class="thanks">
-  <div class="blob" aria-hidden="true" style="bottom:-17rem; left:-18rem; width:38rem; height:35rem; background:var(--sage-wash); opacity:.4; border-radius: 55% 45% 48% 52% / 45% 55% 48% 52%;"></div>
-
-  <div class="inner">
-    <div class="sprig" aria-hidden="true" data-reveal>
-      <svg class="bot" width="112" height="164" viewBox="0 0 130 190" style="stroke:#76816A; stroke-width:1;">
-        <path d="M65.0 186.0 C 61.0 160.0, 69.0 138.0, 64.0 112.0 C 60.0 88.0, 68.0 64.0, 65.0 14.0"/>
-        <path d="M64.0 176.8 C 57.8 167.8, 45.2 160.2, 37.7 158.6 C 41.8 165.0, 53.4 174.2, 64.0 176.8 Z"/>
-        <path d="M64.2 159.1 C 75.1 156.4, 87.1 146.9, 91.3 140.3 C 83.6 142.0, 70.6 149.8, 64.2 159.1 Z" style="fill:#8C977E; fill-opacity:.06;"/>
-        <path d="M65.4 141.8 C 60.4 132.4, 49.1 123.7, 42.1 121.3 C 45.3 128.0, 55.4 138.1, 65.4 141.8 Z"/>
-        <path d="M65.5 124.2 C 74.8 120.8, 84.3 111.3, 87.3 105.0 C 80.7 107.2, 70.1 115.4, 65.5 124.2 Z"/>
-        <path d="M63.1 104.8 C 57.8 97.2, 47.0 91.0, 40.7 89.8 C 44.2 95.2, 54.1 102.7, 63.1 104.8 Z" style="fill:#8C977E; fill-opacity:.06;"/>
-        <path d="M63.1 88.1 C 71.4 86.0, 80.4 78.8, 83.5 73.7 C 77.7 75.0, 67.8 81.0, 63.1 88.1 Z"/>
-        <path d="M64.4 69.0 C 61.0 62.2, 53.1 56.0, 48.1 54.3 C 50.3 59.1, 57.3 66.4, 64.4 69.0 Z"/>
-        <path d="M65.5 48.2 C 71.9 46.6, 78.6 40.9, 80.8 36.9 C 76.4 37.9, 68.9 42.6, 65.5 48.2 Z" style="fill:#8C977E; fill-opacity:.06;"/>
-        <path d="M65.6 28.2 C 63.0 23.7, 57.2 20.0, 53.6 19.3 C 55.3 22.5, 60.5 27.1, 65.6 28.2 Z"/>
-        <path d="M65.0 14.0 C 66.3 9.6, 65.2 3.7, 63.5 1.0 C 62.5 4.0, 62.7 10.0, 65.0 14.0 Z"/>
-      </svg>
-    </div>
-
-    <div data-reveal>
-      <div class="label">In closing</div>
-      <h2 class="display">Thank You</h2>
-      <hr class="rule">
-    </div>
-
-    <div class="grats" data-reveal>
-      Thank you for sharing your memories.<br>
-      Thank you for creating together.<br>
-      Thank you for helping preserve a life that mattered.
-    </div>
-
-    <div class="bless" data-reveal>
-      May this book become something your family<br>
-      returns to for years to come.
-    </div>
-
-    <div class="signoff" data-reveal>
-      <div class="with">With gratitude,</div>
-      <div class="wordmark">Draw Near</div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ FOR THE HOST ============ -->
-<section class="host">
+<section class="host" id="host">
   <div class="inner">
     <div data-reveal>
       <div class="toplabel">For the host</div>
@@ -381,7 +253,7 @@
     <p class="intro" data-reveal style="margin-top:2.6rem;">A little preparation makes the room feel gracious.<br>Here is all you need —</p>
 
     <ul data-reveal data-stagger>
-      <li><span class="sq"></span>One large table, if possible</li>
+      <li><span class="sq"></span>One large or multiple tables, if possible</li>
       <li><span class="sq"></span>Good lighting</li>
       <li><span class="sq"></span>Light snacks</li>
       <li><span class="sq"></span>Coffee or tea</li>

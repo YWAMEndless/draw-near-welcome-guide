@@ -158,33 +158,103 @@ em, i { font-family: var(--serif); font-style: italic; }
   flex: none;
 }
 
-/* ---------------- header ---------------- */
+/* ---------------- header & menu ---------------- */
 
 .site-head {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 50;
-  text-align: center;
-  padding: 1.05rem 1rem 0.95rem;
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-  background: color-mix(in srgb, var(--cream) 88%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.6s ease, border-color 0.6s ease;
+}
+body.scrolled .site-head,
+body.menu-open .site-head {
+  background: color-mix(in srgb, var(--cream) 90%, transparent);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid color-mix(in srgb, var(--hairline) 55%, transparent);
+  border-bottom-color: color-mix(in srgb, var(--hairline) 55%, transparent);
 }
-body.scrolled .site-head { opacity: 1; transform: translateY(0); }
+body.menu-open .site-head { background: var(--cream); }
 
-.site-head a {
+/* the wordmark waits until the cover is left behind — the cover already says it */
+.site-head .brand-link {
   font-family: var(--sans);
   font-weight: 480;
   font-size: 0.62rem;
   letter-spacing: 0.58em;
-  text-indent: 0.58em;
   text-transform: uppercase;
   color: var(--char);
   text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+}
+body.scrolled .site-head .brand-link,
+body.menu-open .site-head .brand-link {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.9rem;
+}
+.site-nav a {
+  font-family: var(--sans);
+  font-weight: 450;
+  font-size: 0.6rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--char-soft);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+.site-nav a:hover { color: var(--clay); }
+
+.menu-toggle {
+  display: none;
+  font-family: var(--sans);
+  font-weight: 450;
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  color: var(--char);
+  background: none;
+  border: 0;
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+
+@media (max-width: 52rem) {
+  .menu-toggle { display: block; }
+
+  .site-nav {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    padding: 0.4rem 0 1.2rem;
+    background: var(--cream);
+    border-bottom: 1px solid color-mix(in srgb, var(--hairline) 55%, transparent);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.45s ease, transform 0.45s ease, visibility 0s linear 0.45s;
+  }
+  body.menu-open .site-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .site-nav a { padding: 0.85rem 1rem; }
 }
 
 /* ---------------- sections ---------------- */
@@ -193,6 +263,7 @@ section {
   position: relative;
   overflow: hidden;
   padding: var(--pause) 1.5rem;
+  scroll-margin-top: 3.4rem; /* menu links land clear of the fixed header */
 }
 
 .inner {
@@ -331,15 +402,18 @@ svg.bot path {
   margin-top: 2.6rem;
 }
 
-.welcome .mem-lines {
-  font-family: var(--serif);
-  font-weight: 380;
-  font-size: clamp(1.1rem, 1rem + 0.6vw, 1.3rem);
-  line-height: 2.1;
-  margin-top: 2rem;
-}
+.welcome .body-text { max-width: 30rem; }
 
-.welcome .body-text { margin-top: 2rem; max-width: 30rem; }
+.welcome .facilitate {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 380;
+  font-size: clamp(1.1rem, 1rem + 0.6vw, 1.35rem);
+  line-height: 1.8;
+  color: var(--sage-deep);
+  margin-top: 2rem;
+  max-width: 28rem;
+}
 
 .welcome .closing {
   font-family: var(--serif);
@@ -357,53 +431,39 @@ svg.bot path {
 }
 @media (max-width: 64rem) { .welcome .margin-stem { display: none; } }
 
-/* ---------------- expect / table acts ---------------- */
+/* ---------------- table acts ---------------- */
 
 .acts { margin-top: 2.8rem; }
 .acts > div { padding: 0.55rem 0; }
 
-.expect .foot {
-  margin-top: 3rem;
-  font-family: var(--serif);
-  font-weight: 380;
-  font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.25rem);
-  line-height: 1.8;
-  color: var(--char-soft);
-}
-.expect .foot em { color: var(--clay); }
-
 /* ---------------- bring ---------------- */
 
-.bring .grid {
-  margin: 3rem auto 0;
-  max-width: 34rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2.4rem;
-  row-gap: 1.15rem;
-  text-align: left;
-}
-@media (max-width: 34rem) {
-  .bring .grid { grid-template-columns: 1fr; max-width: 19rem; }
+.bring .how {
+  margin: 1.8rem auto 0;
+  max-width: 29rem;
+  font-family: var(--sans);
+  font-weight: 330;
+  font-size: 0.93rem;
+  line-height: 2.05;
+  letter-spacing: 0.015em;
+  color: var(--char-soft);
 }
 
-.bring .item {
-  display: flex;
-  align-items: flex-start;
-  font-family: var(--sans);
-  font-weight: 340;
-  font-size: 0.92rem;
-  letter-spacing: 0.04em;
-  color: var(--char);
+.bring .prompts {
+  list-style: none;
+  margin: 3rem auto 0;
+  max-width: 32rem;
+  text-align: left;
 }
-.bring .item .note {
+.bring .prompts li {
   font-family: var(--serif);
-  font-style: italic;
   font-weight: 380;
-  color: #9C947F;
-  margin-left: 0.45rem;
-  font-size: 1rem;
+  font-size: clamp(1.08rem, 0.98rem + 0.5vw, 1.3rem);
+  line-height: 1.65;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--hairline) 45%, transparent);
 }
+.bring .prompts li:last-child { border-bottom: 0; }
 
 .bring .foot { margin-top: 3.4rem; }
 .bring .foot .line1 {
@@ -422,75 +482,6 @@ svg.bot path {
   color: var(--clay);
 }
 
-/* ---------------- reflection ---------------- */
-
-.reflect ol {
-  list-style: none;
-  margin-top: 2.6rem;
-}
-.reflect li {
-  font-family: var(--serif);
-  font-weight: 380;
-  font-size: clamp(1.15rem, 1rem + 0.8vw, 1.45rem);
-  line-height: 1.55;
-  padding: 0.85rem 0;
-}
-.reflect li .qsep {
-  display: block;
-  width: 1.4rem;
-  height: 1px;
-  background: #DCD3BF;
-  margin: 1.1rem auto 0;
-}
-.reflect li:last-child .qsep { display: none; }
-
-/* ---------------- reminders (sage plate) ---------------- */
-
-.remind { background: var(--sage-wash); }
-.remind .label { color: #5E6952; }
-.remind .rule { background: #B99A82; }
-
-.remind .lead {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 370;
-  font-size: clamp(1.2rem, 1.05rem + 0.8vw, 1.5rem);
-  margin-top: 2.8rem;
-}
-
-.remind .may {
-  font-family: var(--serif);
-  font-weight: 350;
-  font-size: clamp(1.5rem, 1.2rem + 1.6vw, 2.1rem);
-  line-height: 2.02;
-  margin-top: 1.4rem;
-}
-.remind .may em { color: var(--sage-deep); }
-
-.remind .foot {
-  margin-top: 3rem;
-  font-family: var(--sans);
-  font-weight: 400;
-  font-size: 0.78rem;
-  letter-spacing: 0.3em;
-  text-indent: 0.3em;
-  text-transform: uppercase;
-  color: var(--sage-deep);
-}
-
-/* ---------------- memory book ---------------- */
-
-.book .icon { display: flex; justify-content: center; margin-bottom: 2.6rem; }
-
-.book .statement {
-  font-family: var(--serif);
-  font-weight: 360;
-  font-size: clamp(1.25rem, 1.05rem + 1vw, 1.65rem);
-  line-height: 1.95;
-  margin-top: 2.6rem;
-}
-.book .statement .quiet { color: var(--char-soft); }
-
 /* ---------------- children (clay plate) ---------------- */
 
 .children { background: var(--clay-wash); }
@@ -502,6 +493,17 @@ svg.bot path {
   line-height: 2;
   letter-spacing: 0.04em;
   margin-top: 2.6rem;
+}
+
+.children .provide {
+  margin: 2.4rem auto 0;
+  max-width: 27rem;
+  font-family: var(--sans);
+  font-weight: 330;
+  font-size: 0.93rem;
+  line-height: 2;
+  letter-spacing: 0.015em;
+  color: var(--char-soft);
 }
 
 .children .flower { display: flex; justify-content: center; margin-top: 2.2rem; }
@@ -547,46 +549,6 @@ svg.bot path {
   margin-top: 2.6rem;
 }
 .table-pg .gather em { color: var(--clay); }
-
-/* ---------------- thank you ---------------- */
-
-.thanks .sprig { display: flex; justify-content: center; margin-bottom: 3rem; }
-
-.thanks .grats {
-  font-family: var(--serif);
-  font-weight: 370;
-  font-size: clamp(1.1rem, 1rem + 0.7vw, 1.4rem);
-  line-height: 2.15;
-  margin-top: 2.6rem;
-}
-
-.thanks .bless {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 380;
-  font-size: clamp(1.15rem, 1rem + 0.8vw, 1.45rem);
-  line-height: 1.8;
-  color: var(--char-soft);
-  margin-top: 2.4rem;
-}
-
-.thanks .signoff { margin-top: 3.6rem; }
-.thanks .signoff .with {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.05rem;
-  color: var(--char-soft);
-}
-.thanks .signoff .wordmark {
-  margin-top: 1rem;
-  font-family: var(--sans);
-  font-weight: 480;
-  font-size: 0.82rem;
-  letter-spacing: 0.5em;
-  text-indent: 0.5em;
-  text-transform: uppercase;
-  color: var(--char);
-}
 
 /* ---------------- host ---------------- */
 

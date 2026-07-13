@@ -238,18 +238,14 @@
   /* =============== WELCOME (p2) =============== */
 
   .welcome-inner {
-    position: absolute; top: 1.9in; left: 1.35in; width: 4.55in;
+    position: absolute; top: 2.35in; left: 1.35in; width: 4.55in;
   }
   .welcome-inner h2 { margin: 0.14in 0 0; }
-  .welcome .lead {
-    margin-top: 0.42in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 16.5pt; line-height: 1.6; color: var(--char);
-  }
-  .welcome .mem-lines {
+  .welcome .facilitate {
     margin-top: 0.3in;
-    font-family: 'Cormorant Garamond'; font-weight: 380;
-    font-size: 13.5pt; line-height: 2.05; color: var(--char);
+    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 380;
+    font-size: 13.5pt; line-height: 1.75; color: var(--sage-deep);
+    max-width: 4in;
   }
   .welcome .body-text { margin-top: 0.3in; max-width: 4.1in; }
   .welcome .closing {
@@ -261,152 +257,78 @@
     position: absolute; right: 1.05in; top: 3.1in;
   }
 
-  /* =============== EXPECT (p3) =============== */
-
-  .expect { text-align: center; }
-  .expect .head { position: absolute; top: 1.55in; left: 1in; right: 1in; }
-  .expect .intro {
-    position: absolute; top: 2.95in; left: 2in; right: 2in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 13.5pt; line-height: 1.7; color: var(--char-soft);
-  }
-  .expect .acts {
-    position: absolute; top: 4.05in; left: 1in; right: 1in;
-    font-family: 'Cormorant Garamond'; font-weight: 370;
-    font-size: 15.5pt; line-height: 2.15; color: var(--char);
-  }
-  .expect .foot {
-    position: absolute; top: 8.25in; left: 2in; right: 2in;
-    font-family: 'Cormorant Garamond'; font-weight: 380;
-    font-size: 13pt; line-height: 1.75; color: var(--char-soft);
-  }
-  .expect .foot em { font-style: italic; color: var(--clay); }
-
-  /* =============== BRING (p4) =============== */
+  /* =============== BRING (p3–p4) =============== */
 
   .bring .head { position: absolute; top: 1.55in; left: 1.2in; right: 1.2in; text-align: center; }
   .bring .intro {
-    position: absolute; top: 2.9in; left: 2in; right: 2in; text-align: center;
+    position: absolute; top: 2.8in; left: 2in; right: 2in; text-align: center;
     font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
     font-size: 13.5pt; color: var(--char-soft);
   }
-  .bring .grid {
-    position: absolute; top: 3.95in; left: 1.75in; right: 1.35in;
-    display: grid; grid-template-columns: 1fr 1fr;
-    column-gap: 0.5in; row-gap: 0.3in;
+  .bring .how {
+    position: absolute; top: 3.3in; left: 2in; right: 2in; text-align: center;
+    font-family: 'Montserrat'; font-weight: 330;
+    font-size: 9.3pt; line-height: 2; letter-spacing: 0.015em;
+    color: var(--char-soft);
   }
-  .bring .item {
-    display: flex; align-items: center;
-    font-family: 'Montserrat'; font-weight: 340;
-    font-size: 9.4pt; letter-spacing: 0.04em; color: var(--char);
+  .prompts {
+    position: absolute; left: 1.7in; right: 1.7in;
+    list-style: none; text-align: left;
   }
-  .bring .item span.note {
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 380;
-    color: #9C947F; margin-left: 0.08in; font-size: 10.5pt;
+  .prompts li {
+    font-family: 'Cormorant Garamond'; font-weight: 380;
+    font-size: 12.5pt; line-height: 1.5; color: var(--char);
+    padding: 0.11in 0;
+    border-bottom: 0.8px solid #E2DAC8;
   }
-  .bring .foot {
-    position: absolute; top: 8.75in; left: 1.6in; right: 1.6in; text-align: center;
+  .prompts li:last-child { border-bottom: 0; }
+  .bring .prompts { top: 4.55in; }
+
+  .bring2 .contlabel {
+    position: absolute; top: 1.55in; left: 0; right: 0; text-align: center;
   }
-  .bring .foot .line1 {
+  .bring2 .prompts { top: 2.6in; }
+  .bring2 .foot {
+    position: absolute; top: 7.15in; left: 1.6in; right: 1.6in; text-align: center;
+  }
+  .bring2 .foot .line1 {
     font-family: 'Montserrat'; font-weight: 330; font-size: 9.3pt;
     letter-spacing: 0.03em; color: var(--char-soft);
   }
-  .bring .foot .line2 {
+  .bring2 .foot .line2 {
     margin-top: 0.16in;
     font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400;
     font-size: 18pt; color: var(--clay);
   }
 
-  /* =============== REFLECTION (p5) =============== */
-
-  .reflect { text-align: center; }
-  .reflect .head { position: absolute; top: 1.55in; left: 1in; right: 1in; }
-  .reflect .intro {
-    position: absolute; top: 2.85in; left: 2in; right: 2in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 13.5pt; color: var(--char-soft);
-  }
-  .reflect ol {
-    position: absolute; top: 3.42in; left: 1.4in; right: 1.4in;
-    list-style: none;
-  }
-  .reflect li {
-    font-family: 'Cormorant Garamond'; font-weight: 380;
-    font-size: 15.5pt; line-height: 1.5; color: var(--char);
-    padding: 0.105in 0;
-  }
-  .reflect li em { font-style: italic; }
-  .reflect li .qsep {
-    display: block; width: 0.22in; height: 1px;
-    background: #DCD3BF; margin: 0.13in auto 0;
-  }
-  .reflect li:last-child .qsep { display: none; }
-
-  /* =============== REMINDERS (p6 — sage plate) =============== */
-
-  .remind { background: var(--sage-wash); text-align: center; }
-  .remind .head { position: absolute; top: 2.1in; left: 1in; right: 1in; }
-  .remind .lead {
-    position: absolute; top: 3.5in; left: 1.8in; right: 1.8in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 16pt; color: var(--char);
-  }
-  .remind .may {
-    position: absolute; top: 4.55in; left: 1in; right: 1in;
-    font-family: 'Cormorant Garamond'; font-weight: 350;
-    font-size: 21pt; line-height: 2.02; color: var(--char);
-  }
-  .remind .may em { font-style: italic; color: var(--sage-deep); }
-  .remind .foot {
-    position: absolute; top: 8.9in; left: 1in; right: 1in;
-    font-family: 'Montserrat'; font-weight: 400; font-size: 8.6pt;
-    letter-spacing: 0.3em; text-transform: uppercase; color: var(--sage-deep);
-  }
-  .remind .folio { color: #96A084; }
-
-  /* =============== MEMORY BOOK (p7) =============== */
-
-  .book { text-align: center; }
-  .book .icon-wrap {
-    position: absolute; top: 2.7in; left: 0; right: 0;
-    display: flex; justify-content: center;
-  }
-  .book .head { position: absolute; top: 4.35in; left: 1in; right: 1in; }
-  .book .statement {
-    position: absolute; top: 5.75in; left: 1.7in; right: 1.7in;
-    font-family: 'Cormorant Garamond'; font-weight: 360;
-    font-size: 17.5pt; line-height: 1.95; color: var(--char);
-  }
-  .book .statement em { font-style: italic; }
-  .book .statement .quiet { color: var(--char-soft); }
-
-  /* =============== CHILDREN (p8) =============== */
+  /* =============== CHILDREN (p5) =============== */
 
   .children { background: var(--clay-wash); text-align: center; }
-  .children .head { position: absolute; top: 2.1in; left: 1in; right: 1in; }
-  .children .lead {
-    position: absolute; top: 3.45in; left: 1.8in; right: 1.8in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 15.5pt; color: var(--char);
-  }
+  .children .head { position: absolute; top: 1.8in; left: 1in; right: 1in; }
   .children .ways {
-    position: absolute; top: 4.5in; left: 1in; right: 1in;
+    position: absolute; top: 3.5in; left: 1in; right: 1in;
     font-family: 'Cormorant Garamond'; font-weight: 350;
     font-size: 20pt; line-height: 2.0; color: var(--char);
     letter-spacing: 0.04em;
   }
+  .children .provide {
+    position: absolute; top: 6.1in; left: 1.95in; right: 1.95in;
+    font-family: 'Montserrat'; font-weight: 330;
+    font-size: 9.3pt; line-height: 2; letter-spacing: 0.015em;
+    color: var(--char-soft);
+  }
   .children .foot {
-    position: absolute; top: 8.35in; left: 1.5in; right: 1.5in;
+    position: absolute; top: 8.3in; left: 1.5in; right: 1.5in;
     font-family: 'Cormorant Garamond'; font-weight: 380; font-style: italic;
     font-size: 14.5pt; line-height: 1.8; color: var(--clay);
   }
   .children .flower-wrap {
-    position: absolute; top: 7.15in; left: 0; right: 0;
+    position: absolute; top: 7.1in; left: 0; right: 0;
     display: flex; justify-content: center;
   }
   .children .folio { color: #B49A83; }
 
-  /* =============== TABLE (p9) =============== */
+  /* =============== TABLE (p6) =============== */
 
   .table-pg { background: var(--cream); text-align: center; }
   .table-pg .head { position: absolute; top: 1.55in; left: 1in; right: 1in; }
@@ -431,37 +353,7 @@
   }
   .table-pg .gather em { font-style: italic; color: var(--clay); }
 
-  /* =============== THANK YOU (p10) =============== */
-
-  .thanks { text-align: center; }
-  .thanks .sprig-wrap {
-    position: absolute; top: 1.9in; left: 0; right: 0;
-    display: flex; justify-content: center;
-  }
-  .thanks .head { position: absolute; top: 4.05in; left: 1in; right: 1in; }
-  .thanks .grats {
-    position: absolute; top: 5.3in; left: 1.7in; right: 1.7in;
-    font-family: 'Cormorant Garamond'; font-weight: 370;
-    font-size: 14.5pt; line-height: 2.15; color: var(--char);
-  }
-  .thanks .bless {
-    position: absolute; top: 7.25in; left: 1.9in; right: 1.9in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 380;
-    font-size: 15.5pt; line-height: 1.8; color: var(--char-soft);
-  }
-  .thanks .signoff { position: absolute; top: 8.9in; left: 1in; right: 1in; }
-  .thanks .signoff .with {
-    font-family: 'Cormorant Garamond'; font-style: italic;
-    font-size: 12.5pt; color: var(--char-soft);
-  }
-  .thanks .signoff .wordmark {
-    margin-top: 0.14in;
-    font-family: 'Montserrat'; font-weight: 480;
-    font-size: 10pt; letter-spacing: 0.5em; text-indent: 0.5em;
-    color: var(--char);
-  }
-
-  /* =============== HOST (p11) =============== */
+  /* =============== HOST (p7) =============== */
 
   .host { background: var(--linen); }
   .host .toplabel {
@@ -562,13 +454,6 @@
     <h2 class="display">There are many ways<br>to remember someone we&nbsp;love.</h2>
     <div class="rule-clay rule-clay--left"></div>
 
-    <div class="mem-lines">
-      Some memories make us laugh.<br>
-      Some bring tears.<br>
-      Some are stories we’ve told a hundred times.<br>
-      <span class="serif-it">Others have never been spoken aloud.</span>
-    </div>
-
     <p class="body-text">
       The Remembering Room is an opportunity to slow down together.
       Through storytelling, photographs, handwritten notes, and creativity,
@@ -576,7 +461,12 @@
       memory book for the family.
     </p>
 
-    <p class="body-text" style="margin-top:0.18in;">
+    <p class="facilitate">
+      Two mental health professionals will facilitate a time
+      to gather, create, and share.
+    </p>
+
+    <p class="body-text" style="margin-top:0.24in;">
       There is no artistic ability required.<br>
       There is no right way to remember.
     </p>
@@ -602,61 +492,54 @@
   <div class="folio">2</div>
 </section>
 
-<!-- ============ PAGE 3 · WHAT TO EXPECT ============ -->
-<section class="page expect">
-  <div class="runner">The Remembering Room</div>
-
-  <div class="head">
-    <div class="label">Our time together</div>
-    <h2 class="display" style="margin-top:0.14in;">What to Expect</h2>
-    <div class="rule-clay"></div>
-  </div>
-
-  <div class="intro">Our gathering will last approximately three hours.<br>During our time together we will —</div>
-
-  <div class="acts">
-    Welcome everyone<br>
-    Share the purpose of the gathering<br>
-    Create individual memory pages<br>
-    Tell stories as we create<br>
-    Assemble the memory book together<br>
-    Close with a time of gratitude and reflection
-  </div>
-
-  <div class="foot">
-    All art materials are provided.<br>
-    <em>No artistic experience is necessary.</em>
-  </div>
-
-  <div class="folio">3</div>
-</section>
-
-<!-- ============ PAGE 4 · WHAT TO BRING ============ -->
+<!-- ============ PAGE 3 · WHAT TO BRING ============ -->
 <section class="page bring">
   <div class="runner">The Remembering Room</div>
 
   <div class="head">
-    <div class="label">Keepsakes &amp; stories</div>
+    <div class="label">Photographs &amp; prompts</div>
     <h2 class="display" style="margin-top:0.14in;">What to Bring</h2>
     <div class="rule-clay"></div>
   </div>
 
-  <div class="intro">If possible, please bring one or two of the following —</div>
+  <div class="intro">If possible, please bring a few favorite photographs.</div>
 
-  <div class="grid">
-    <div class="item"><span class="sq"></span>A favorite photograph</div>
-    <div class="item"><span class="sq"></span>A funny story</div>
-    <div class="item"><span class="sq"></span>A handwritten letter</div>
-    <div class="item"><span class="sq"></span>A favorite saying</div>
-    <div class="item"><span class="sq"></span>A recipe</div>
-    <div class="item"><span class="sq"></span>A Bible verse <span class="note">(optional)</span></div>
-    <div class="item"><span class="sq"></span>A favorite quote</div>
-    <div class="item"><span class="sq"></span>Children’s artwork</div>
-    <div class="item"><span class="sq"></span>A meaningful object</div>
-    <div class="item"><span class="sq"></span>Ticket stubs and maps</div>
-    <div class="item"><span class="sq"></span>Small memorabilia</div>
-    <div class="item"><span class="sq"></span>Anything that tells a story</div>
+  <div class="how">
+    Before arriving, spend a little time with the prompts below —
+    journal or write about the ones that resonate, so you have
+    something to work with. There is no need to answer them all;
+    one or two is plenty, about one per page.
   </div>
+
+  <ol class="prompts">
+    <li>Write down words or phrases they used all the time — we will turn these into quotes.</li>
+    <li>What were some of their fondest quirks, habits, or daily routines?</li>
+    <li>How would you describe their laugh or sense of humor?</li>
+    <li>What is your earliest memory of them?</li>
+    <li>Can you share a specific story that captures something essential about their personality?</li>
+    <li>Did they have favorite stories they loved to tell — from childhood, their teen years, early adulthood, or later in life?</li>
+    <li>What were the biggest hardships or challenges they faced, and how did they approach or overcome them?</li>
+  </ol>
+
+  <div class="folio">3</div>
+</section>
+
+<!-- ============ PAGE 4 · WHAT TO BRING, CONTINUED ============ -->
+<section class="page bring2">
+  <div class="runner">The Remembering Room</div>
+
+  <div class="contlabel">
+    <div class="label">What to bring &middot; continued</div>
+  </div>
+
+  <ol class="prompts">
+    <li>How did they show love or care — for others, and for you personally?</li>
+    <li>What was something they taught you, either on purpose or without realizing it?</li>
+    <li>What causes, hobbies, or passions were they most proud of?</li>
+    <li>What do you miss the most about them?</li>
+    <li>What is the image of them that most often comes to mind?</li>
+    <li>When people think of them, how would they want to be remembered?</li>
+  </ol>
 
   <div class="foot">
     <div class="line1">Don’t worry if you don’t have any of these.</div>
@@ -666,87 +549,7 @@
   <div class="folio">4</div>
 </section>
 
-<!-- ============ PAGE 5 · REFLECTION QUESTIONS ============ -->
-<section class="page reflect">
-  <div class="runner">The Remembering Room</div>
-
-  <div class="head">
-    <div class="label">Before you begin</div>
-    <h2 class="display" style="margin-top:0.14in;">Reflection Questions</h2>
-    <div class="rule-clay"></div>
-  </div>
-
-  <div class="intro">Choose one or two to inspire your page —</div>
-
-  <ol>
-    <li>What is your favorite memory?<span class="qsep"></span></li>
-    <li>What made them laugh?<span class="qsep"></span></li>
-    <li>What did they teach you?<span class="qsep"></span></li>
-    <li>What will you always remember?<span class="qsep"></span></li>
-    <li>What did they love?<span class="qsep"></span></li>
-    <li>What words remind you of them?<span class="qsep"></span></li>
-    <li>What is something you never want your family to forget?<span class="qsep"></span></li>
-    <li>If they could speak to future generations, what might they say?<span class="qsep"></span></li>
-    <li><em>What part of them lives on in you?</em><span class="qsep"></span></li>
-  </ol>
-
-  <div class="folio">5</div>
-</section>
-
-<!-- ============ PAGE 6 · GENTLE REMINDERS ============ -->
-<section class="page remind">
-  <div class="blob" style="top:-2.2in; left:-2.4in; width:5.6in; height:5.2in; background:#DDE3CE; opacity:.55; border-radius: 52% 48% 45% 55% / 48% 55% 45% 52%;"></div>
-  <div class="blob" style="bottom:-2.5in; right:-2.5in; width:5.8in; height:5.2in; background:#DDE3CE; opacity:.45; border-radius: 45% 55% 58% 42% / 55% 45% 55% 45%;"></div>
-
-  <div class="head">
-    <div class="label" style="color:#5E6952;">A few gentle reminders</div>
-    <h2 class="display" style="margin-top:0.14in;">Everyone grieves differently.</h2>
-    <div class="rule-clay" style="background:#B99A82;"></div>
-  </div>
-
-  <div class="lead">Today…</div>
-
-  <div class="may">
-    You may laugh.<br>
-    You may cry.<br>
-    You may sit quietly.<br>
-    You may tell stories.<br>
-    <em>You may simply create.</em>
-  </div>
-
-  <div class="foot">Every response is welcome</div>
-
-  <div class="folio">6</div>
-</section>
-
-<!-- ============ PAGE 7 · THE MEMORY BOOK ============ -->
-<section class="page book">
-  <div class="runner">The Remembering Room</div>
-
-  <div class="icon-wrap">
-    <svg class="bot" width="150" height="76" viewBox="0 0 150 76" style="stroke:#6E695F; stroke-width:1;">
-      <path d="M75 16 C 61 7, 38 4, 21 10 C 20.3 27, 20.7 44, 20 60 C 38 54, 61 57, 75 66 C 89 57, 112 54, 130 60 C 129.3 44, 129.7 27, 129 10 C 112 4, 89 7, 75 16"/>
-      <path d="M75 16 C 74.5 33, 75.4 50, 75 66"/>
-    </svg>
-  </div>
-
-  <div class="head">
-    <div class="label">One book, many voices</div>
-    <h2 class="display" style="margin-top:0.14in;">The Memory Book</h2>
-    <div class="rule-clay"></div>
-  </div>
-
-  <div class="statement">
-    Each person will create one page.<br>
-    Together, those pages become <em>one story</em>.<br>
-    <span class="quiet">Not because one page tells an entire life —<br>
-    but because a life is remembered<br>through <em>many voices</em>.</span>
-  </div>
-
-  <div class="folio">7</div>
-</section>
-
-<!-- ============ PAGE 8 · FOR CHILDREN ============ -->
+<!-- ============ PAGE 5 · FOR CHILDREN ============ -->
 <section class="page children">
   <div class="blob" style="top:-2in; right:-2.3in; width:5.2in; height:4.8in; background:#E9D9C8; opacity:.5; border-radius: 48% 52% 55% 45% / 52% 48% 52% 48%;"></div>
 
@@ -761,6 +564,12 @@
     Painting…<br>
     Writing…<br>
     Collaging…
+  </div>
+
+  <div class="provide">
+    We will provide materials and prompts for children to explore
+    during our time together — or feel free to have your children
+    think or write about the prompts above beforehand.
   </div>
 
   <div class="flower-wrap">
@@ -779,10 +588,10 @@
     There is no “correct” page.
   </div>
 
-  <div class="folio">8</div>
+  <div class="folio">5</div>
 </section>
 
-<!-- ============ PAGE 9 · THE TABLE ============ -->
+<!-- ============ PAGE 6 · THE TABLE ============ -->
 <section class="page table-pg">
   <div class="runner" style="color:#B0A78E;">The Remembering Room</div>
 
@@ -816,56 +625,10 @@
     and to leave a gift for generations to come.
   </div>
 
-  <div class="folio">9</div>
+  <div class="folio">6</div>
 </section>
 
-<!-- ============ PAGE 10 · THANK YOU ============ -->
-<section class="page thanks">
-  <div class="blob" style="bottom:-2.2in; left:-2.4in; width:5.4in; height:5in; background:var(--sage-wash); opacity:.4; border-radius: 55% 45% 48% 52% / 45% 55% 48% 52%;"></div>
-  <div class="runner">The Remembering Room</div>
-
-  <div class="sprig-wrap">
-    <svg class="bot" width="112" height="164" viewBox="0 0 130 190" style="stroke:#76816A; stroke-width:1;">
-      <path d="M65.0 186.0 C 61.0 160.0, 69.0 138.0, 64.0 112.0 C 60.0 88.0, 68.0 64.0, 65.0 14.0"/>
-      <path d="M64.0 176.8 C 57.8 167.8, 45.2 160.2, 37.7 158.6 C 41.8 165.0, 53.4 174.2, 64.0 176.8 Z"/>
-      <path d="M64.2 159.1 C 75.1 156.4, 87.1 146.9, 91.3 140.3 C 83.6 142.0, 70.6 149.8, 64.2 159.1 Z" style="fill:#8C977E; fill-opacity:.06;"/>
-      <path d="M65.4 141.8 C 60.4 132.4, 49.1 123.7, 42.1 121.3 C 45.3 128.0, 55.4 138.1, 65.4 141.8 Z"/>
-      <path d="M65.5 124.2 C 74.8 120.8, 84.3 111.3, 87.3 105.0 C 80.7 107.2, 70.1 115.4, 65.5 124.2 Z"/>
-      <path d="M63.1 104.8 C 57.8 97.2, 47.0 91.0, 40.7 89.8 C 44.2 95.2, 54.1 102.7, 63.1 104.8 Z" style="fill:#8C977E; fill-opacity:.06;"/>
-      <path d="M63.1 88.1 C 71.4 86.0, 80.4 78.8, 83.5 73.7 C 77.7 75.0, 67.8 81.0, 63.1 88.1 Z"/>
-      <path d="M64.4 69.0 C 61.0 62.2, 53.1 56.0, 48.1 54.3 C 50.3 59.1, 57.3 66.4, 64.4 69.0 Z"/>
-      <path d="M65.5 48.2 C 71.9 46.6, 78.6 40.9, 80.8 36.9 C 76.4 37.9, 68.9 42.6, 65.5 48.2 Z" style="fill:#8C977E; fill-opacity:.06;"/>
-      <path d="M65.6 28.2 C 63.0 23.7, 57.2 20.0, 53.6 19.3 C 55.3 22.5, 60.5 27.1, 65.6 28.2 Z"/>
-      <path d="M65.0 14.0 C 66.3 9.6, 65.2 3.7, 63.5 1.0 C 62.5 4.0, 62.7 10.0, 65.0 14.0 Z"/>
-    </svg>
-  </div>
-
-  <div class="head">
-    <div class="label">In closing</div>
-    <h2 class="display" style="margin-top:0.14in;">Thank You</h2>
-    <div class="rule-clay"></div>
-  </div>
-
-  <div class="grats">
-    Thank you for sharing your memories.<br>
-    Thank you for creating together.<br>
-    Thank you for helping preserve a life that mattered.
-  </div>
-
-  <div class="bless">
-    May this book become something your family<br>
-    returns to for years to come.
-  </div>
-
-  <div class="signoff">
-    <div class="with">With gratitude,</div>
-    <div class="wordmark">Draw Near</div>
-  </div>
-
-  <div class="folio">10</div>
-</section>
-
-<!-- ============ PAGE 11 · FOR THE HOST ============ -->
+<!-- ============ PAGE 7 · FOR THE HOST ============ -->
 <section class="page host">
   <div class="toplabel">For the host · Not included in guest copies</div>
 
@@ -878,7 +641,7 @@
   <div class="intro">A little preparation makes the room feel gracious.<br>Here is all you need —</div>
 
   <ul>
-    <li><span class="sq"></span>One large table, if possible</li>
+    <li><span class="sq"></span>One large or multiple tables, if possible</li>
     <li><span class="sq"></span>Good lighting</li>
     <li><span class="sq"></span>Light snacks</li>
     <li><span class="sq"></span>Coffee or tea</li>
@@ -890,7 +653,7 @@
 
   <div class="foot">We will take care of the rest.</div>
 
-  <div class="folio">11</div>
+  <div class="folio">7</div>
 </section>
 
 </body>
