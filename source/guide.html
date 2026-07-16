@@ -261,14 +261,14 @@
 
   .bring .head { position: absolute; top: 1.55in; left: 1.2in; right: 1.2in; text-align: center; }
   .bring .intro {
-    position: absolute; top: 2.8in; left: 2in; right: 2in; text-align: center;
+    position: absolute; top: 2.75in; left: 2in; right: 2in; text-align: center;
     font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 13.5pt; color: var(--char-soft);
+    font-size: 13.5pt; line-height: 1.6; color: var(--char-soft);
   }
   .bring .how {
-    position: absolute; top: 3.3in; left: 2in; right: 2in; text-align: center;
+    position: absolute; top: 3.5in; left: 1.9in; right: 1.9in; text-align: center;
     font-family: 'Montserrat'; font-weight: 330;
-    font-size: 9.3pt; line-height: 2; letter-spacing: 0.015em;
+    font-size: 9.3pt; line-height: 1.95; letter-spacing: 0.015em;
     color: var(--char-soft);
   }
   .prompts {
@@ -282,14 +282,27 @@
     border-bottom: 0.8px solid #E2DAC8;
   }
   .prompts li:last-child { border-bottom: 0; }
-  .bring .prompts { top: 4.55in; }
+  .bring .prompts { top: 4.95in; }
 
   .bring2 .contlabel {
-    position: absolute; top: 1.55in; left: 0; right: 0; text-align: center;
+    position: absolute; top: 1.5in; left: 0; right: 0; text-align: center;
   }
-  .bring2 .prompts { top: 2.6in; }
+  .bring2 .prompts { top: 2.05in; }
+  .bring2 .photo-note {
+    position: absolute; top: 6.35in; left: 1.8in; right: 1.8in;
+    background: var(--sage-wash);
+    padding: 0.26in 0.32in 0.3in;
+    text-align: center;
+  }
+  .bring2 .photo-note .label { color: #5E6952; }
+  .bring2 .photo-note p {
+    margin-top: 0.13in;
+    font-family: 'Montserrat'; font-weight: 330;
+    font-size: 9pt; line-height: 1.85; letter-spacing: 0.015em;
+    color: var(--char-soft);
+  }
   .bring2 .foot {
-    position: absolute; top: 7.15in; left: 1.6in; right: 1.6in; text-align: center;
+    position: absolute; top: 9.05in; left: 1.6in; right: 1.6in; text-align: center;
   }
   .bring2 .foot .line1 {
     font-family: 'Montserrat'; font-weight: 330; font-size: 9.3pt;
@@ -328,32 +341,7 @@
   }
   .children .folio { color: #B49A83; }
 
-  /* =============== TABLE (p6) =============== */
-
-  .table-pg { background: var(--cream); text-align: center; }
-  .table-pg .head { position: absolute; top: 1.55in; left: 1in; right: 1in; }
-  .table-pg .around {
-    position: absolute; top: 2.9in; left: 1in; right: 1in;
-    font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 370;
-    font-size: 15pt; color: var(--char-soft);
-  }
-  .table-pg .acts {
-    position: absolute; top: 3.62in; left: 1in; right: 1in;
-    font-family: 'Cormorant Garamond'; font-weight: 360;
-    font-size: 17pt; line-height: 2.0; color: var(--char);
-  }
-  .table-pg .table-art {
-    position: absolute; top: 6.72in; left: 0; right: 0;
-    display: flex; justify-content: center;
-  }
-  .table-pg .gather {
-    position: absolute; top: 7.78in; left: 1.55in; right: 1.55in;
-    font-family: 'Cormorant Garamond'; font-weight: 370;
-    font-size: 15.5pt; line-height: 1.9; color: var(--char);
-  }
-  .table-pg .gather em { font-style: italic; color: var(--clay); }
-
-  /* =============== HOST (p7) =============== */
+  /* =============== HOST (p6) =============== */
 
   .host { background: var(--linen); }
   .host .toplabel {
@@ -497,18 +485,19 @@
   <div class="runner">The Remembering Room</div>
 
   <div class="head">
-    <div class="label">Photographs &amp; prompts</div>
-    <h2 class="display" style="margin-top:0.14in;">What to Bring</h2>
+    <div class="label">Before you arrive</div>
+    <h2 class="display" style="margin-top:0.14in;">How to Prepare</h2>
     <div class="rule-clay"></div>
   </div>
 
-  <div class="intro">If possible, please bring a few favorite photographs.</div>
+  <div class="intro">Each participant will fill in one to two pages<br>to contribute to the memory book.</div>
 
   <div class="how">
-    Before arriving, spend a little time with the prompts below —
-    journal or write about the ones that resonate, so you have
-    something to work with. There is no need to answer them all;
-    one or two is plenty, about one per page.
+    Look through these prompts and pick one or two that resonate
+    with you. Take some time before our event to journal, collect
+    pictures, and reflect on how you will fill your page(s).
+    These questions are a starting point to help foster inspiration.
+    Don’t try to answer them all — just one is enough.
   </div>
 
   <ol class="prompts">
@@ -518,21 +507,21 @@
     <li>What is your earliest memory of them?</li>
     <li>Can you share a specific story that captures something essential about their personality?</li>
     <li>Did they have favorite stories they loved to tell — from childhood, their teen years, early adulthood, or later in life?</li>
-    <li>What were the biggest hardships or challenges they faced, and how did they approach or overcome them?</li>
   </ol>
 
   <div class="folio">3</div>
 </section>
 
-<!-- ============ PAGE 4 · WHAT TO BRING, CONTINUED ============ -->
+<!-- ============ PAGE 4 · HOW TO PREPARE, CONTINUED ============ -->
 <section class="page bring2">
   <div class="runner">The Remembering Room</div>
 
   <div class="contlabel">
-    <div class="label">What to bring &middot; continued</div>
+    <div class="label">How to prepare &middot; continued</div>
   </div>
 
   <ol class="prompts">
+    <li>What were the biggest hardships or challenges they faced, and how did they approach or overcome them?</li>
     <li>How did they show love or care — for others, and for you personally?</li>
     <li>What was something they taught you, either on purpose or without realizing it?</li>
     <li>What causes, hobbies, or passions were they most proud of?</li>
@@ -540,6 +529,20 @@
     <li>What is the image of them that most often comes to mind?</li>
     <li>When people think of them, how would they want to be remembered?</li>
   </ol>
+
+  <div class="photo-note">
+    <div class="label">A note on photos</div>
+    <p>
+      Please only bring photographs — or copies of photographs —
+      that you feel comfortable cutting or leaving in the book.
+      What you bring will stay with the family.
+    </p>
+    <p>
+      If a specific item reminds you of your loved one, please take
+      a picture of it and bring the photo instead of the item, so we
+      can include it in the book.
+    </p>
+  </div>
 
   <div class="foot">
     <div class="line1">Don’t worry if you don’t have any of these.</div>
@@ -591,44 +594,7 @@
   <div class="folio">5</div>
 </section>
 
-<!-- ============ PAGE 6 · THE TABLE ============ -->
-<section class="page table-pg">
-  <div class="runner" style="color:#B0A78E;">The Remembering Room</div>
-
-  <div class="head">
-    <div class="label">Gathered together</div>
-    <h2 class="display" style="margin-top:0.14in;">The Table</h2>
-    <div class="rule-clay"></div>
-  </div>
-
-  <div class="around">Around a table…</div>
-
-  <div class="acts">
-    Stories are told.<br>
-    Photographs are passed.<br>
-    Hands create.<br>
-    Children listen.<br>
-    Generations remember.
-  </div>
-
-  <div class="table-art">
-    <svg class="bot" width="230" height="58" viewBox="0 0 230 58" style="stroke:#B08265; stroke-width:1.1;">
-      <path d="M14 13 C 70 9.5, 160 9.5, 216 12.5"/>
-      <path d="M42 11.2 C 41 24, 42.2 37, 40.5 49"/>
-      <path d="M188 10.9 C 189 23, 187.9 36, 189.4 48"/>
-    </svg>
-  </div>
-
-  <div class="gather">
-    Today we gather around one table —<br>
-    to honor <em>one life</em> —<br>
-    and to leave a gift for generations to come.
-  </div>
-
-  <div class="folio">6</div>
-</section>
-
-<!-- ============ PAGE 7 · FOR THE HOST ============ -->
+<!-- ============ PAGE 6 · FOR THE HOST ============ -->
 <section class="page host">
   <div class="toplabel">For the host · Not included in guest copies</div>
 
@@ -653,7 +619,7 @@
 
   <div class="foot">We will take care of the rest.</div>
 
-  <div class="folio">7</div>
+  <div class="folio">6</div>
 </section>
 
 </body>

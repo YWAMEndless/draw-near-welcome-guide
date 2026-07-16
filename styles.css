@@ -431,11 +431,6 @@ svg.bot path {
 }
 @media (max-width: 64rem) { .welcome .margin-stem { display: none; } }
 
-/* ---------------- table acts ---------------- */
-
-.acts { margin-top: 2.8rem; }
-.acts > div { padding: 0.55rem 0; }
-
 /* ---------------- bring ---------------- */
 
 .bring .how {
@@ -464,6 +459,22 @@ svg.bot path {
   border-bottom: 1px solid color-mix(in srgb, var(--hairline) 45%, transparent);
 }
 .bring .prompts li:last-child { border-bottom: 0; }
+
+.bring .photo-note {
+  margin: 3.4rem auto 0;
+  max-width: 29rem;
+  padding: 2rem 1.8rem 2.2rem;
+  background: var(--sage-wash);
+}
+.bring .photo-note p {
+  font-family: var(--sans);
+  font-weight: 330;
+  font-size: 0.92rem;
+  line-height: 2;
+  letter-spacing: 0.015em;
+  color: var(--char-soft);
+  margin-top: 1.3rem;
+}
 
 .bring .foot { margin-top: 3.4rem; }
 .bring .foot .line1 {
@@ -517,38 +528,6 @@ svg.bot path {
   line-height: 1.8;
   color: var(--clay);
 }
-
-/* ---------------- table ---------------- */
-
-.table-pg { background: var(--cream); }
-
-.table-pg .around {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 370;
-  font-size: clamp(1.15rem, 1rem + 0.7vw, 1.4rem);
-  color: var(--char-soft);
-  margin-top: 2.6rem;
-}
-
-.table-pg .acts {
-  font-family: var(--serif);
-  font-weight: 360;
-  font-size: clamp(1.3rem, 1.1rem + 1vw, 1.7rem);
-  line-height: 2;
-  margin-top: 1rem;
-}
-
-.table-pg .table-art { display: flex; justify-content: center; margin-top: 2.6rem; }
-
-.table-pg .gather {
-  font-family: var(--serif);
-  font-weight: 370;
-  font-size: clamp(1.15rem, 1rem + 0.8vw, 1.45rem);
-  line-height: 1.9;
-  margin-top: 2.6rem;
-}
-.table-pg .gather em { color: var(--clay); }
 
 /* ---------------- host ---------------- */
 
