@@ -433,9 +433,9 @@ svg.bot path {
 
 /* ---------------- bring ---------------- */
 
-/* a change of paper stock: ivory fades into linen so the new section announces itself */
+/* a change of paper stock: ivory fades into sage so the new section announces itself */
 .bring {
-  background: linear-gradient(to bottom, var(--ivory), var(--linen) 26%);
+  background: linear-gradient(to bottom, var(--ivory), var(--sage-wash) 16%);
 }
 
 .bring .how {
@@ -469,7 +469,7 @@ svg.bot path {
   margin: 3.4rem auto 0;
   max-width: 29rem;
   padding: 2rem 1.8rem 2.2rem;
-  background: var(--sage-wash);
+  background: var(--ivory); /* the panel flips to ivory now that the section itself is sage */
 }
 .bring .photo-note p {
   font-family: var(--sans);
