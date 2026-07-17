@@ -433,6 +433,11 @@ svg.bot path {
 
 /* ---------------- bring ---------------- */
 
+/* a change of paper stock: ivory fades into linen so the new section announces itself */
+.bring {
+  background: linear-gradient(to bottom, var(--ivory), var(--linen) 26%);
+}
+
 .bring .how {
   margin: 1.8rem auto 0;
   max-width: 29rem;
